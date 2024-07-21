@@ -8,20 +8,16 @@ export WEBHOOK_API_KEY=xxxxx
 
 export GROQ_API_KEY=xxxxx
 
-wget -O start.sh https://raw.githubusercontent.com/jiangyaqiii/PingPong/web/start.sh && chmod +x start.sh && ./start.sh 
+wget -O start.sh https://raw.githubusercontent.com/jiangyaqiii/chasm/web/start.sh && chmod +x start.sh && ./start.sh 
 
 重启服务：
 
-export device_id=xxxxx
-
-wget -O restart.sh https://raw.githubusercontent.com/jiangyaqiii/PingPong/web/restart.sh && chmod +x restart.sh && ./restart.sh
-
-更新服务：
-
-export device_id=xxxxx
-
-wget -O update.sh https://raw.githubusercontent.com/jiangyaqiii/PingPong/web/update.sh && chmod +x update.sh && ./update.sh
+wget -O restart.sh https://raw.githubusercontent.com/jiangyaqiii/chasm/web/restart.sh && chmod +x restart.sh && ./restart.sh
 
 查看状态：
 
-curl -s https://raw.githubusercontent.com/jiangyaqiii/PingPong/web/look_status.sh | bash
+curl -s https://raw.githubusercontent.com/jiangyaqiii/chasm/web/look_status.sh | bash
+
+查看日志：
+
+curl -s https://raw.githubusercontent.com/jiangyaqiii/chasm/web/logs.sh | bash
