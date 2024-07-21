@@ -4,7 +4,8 @@ sudo sh get-docker.sh
 read -p "请输入你的SCOUT_UID: " SCOUT_UID
 read -p "请输入你的WEBHOOK_API_KEY: " WEBHOOK_API_KEY
 read -p "请输入你的GROQ_API_KEY: " GROQ_API_KEY
-read -p "请输入你的OPENROUTER_API_KEY: " OPENROUTER_API_KEY
+#read -p "请输入你的OPENROUTER_API_KEY: " OPENROUTER_API_KEY
+#read -p "请输入你的OPENAI_API_KEY: " OPENAI_API_KEY
 ip=$(curl -s4 ifconfig.me/ip)
 WEBHOOK_URL=http://$ip:3001/
 
@@ -30,7 +31,7 @@ MODEL=gemma2-9b-it
 GROQ_API_KEY=$GROQ_API_KEY
 
 # Optional
-OPENROUTER_API_KEY=$OPENROUTER_API_KEY
+#OPENROUTER_API_KEY=$OPENROUTER_API_KEY
 #OPENAI_API_KEY=$OPENAI_API_KEY
 EOF
 
