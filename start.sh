@@ -38,4 +38,7 @@ EOF
 docker pull johnsonchasm/chasm-scout
 docker run -d --restart=always --env-file ./.env -p 3001:3001 --name scout johnsonchasm/chasm-scout
 
+cd
+rm start.sh
+
 echo "节点已经安装完成"
