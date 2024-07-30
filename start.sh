@@ -42,3 +42,5 @@ cd
 rm start.sh
 
 echo "节点已经安装完成"
+cd
+rm start.sh
